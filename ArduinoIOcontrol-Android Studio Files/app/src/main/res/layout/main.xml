@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Led Switch"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_gravity="center"
+            android:src="@drawable/lightbulb" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/on"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:text="ON" />
+
+
+            <Button
+                android:id="@+id/off"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="OFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sensorsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Sensors Info"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_gravity="center"
+            android:src="@drawable/infrared_sensor" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:text="Get Data" />
+
+            <Button
+                android:id="@+id/sound"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Horn!!!" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lightInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Photo Resistor Status: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/lightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tempInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Temperature is: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=" °C"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lightLimitInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Light limit is: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/lightLimitValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_speak"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="Voice Command" />
+
+            <Button
+                android:id="@+id/test"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="Set" />
+
+            <EditText
+                android:id="@+id/lightSet"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="Change IP Address or Port"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="IP Address:"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/newIP"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/setIP"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.20"
+                android:text="Set" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Port:"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/newPort"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/setPort"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.20"
+                android:text="Set" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
