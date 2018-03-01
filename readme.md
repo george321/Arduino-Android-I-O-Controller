@@ -20,7 +20,6 @@
 ![App Gui](http://www.cs.uoi.gr/~cs122312/arduino/img/appGui.png)
 
 
-
 ## Για να λειτουργήσει το προγραμμα πρέπει.
 1. Συνδεουμε το arduino με ethernet στο τοπικό δίκτυο. ΠΡΟΣΟΧΗ το arduino
 θα πάρει την ip:port >> 192.168.1.105:8032
